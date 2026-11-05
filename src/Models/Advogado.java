@@ -24,13 +24,21 @@ public class Advogado extends Funcionario {
         return quantidadeProcessos;
     }
 
-    public void getAdvogado(){
+    public void exibirAdvogado(){
         exibirDados();
         System.out.println("--- Mais informações ---");
         System.out.println("Número OAB: "+ getNumeroOab());
         System.out.println("Especialidade: "+ getEspecialidade());
         System.out.println("Quantidade de processos: "+ getQuantidadeProcessos());
         System.out.println("----------------------------");
+    }
+
+    public void exibirDadosProfissionais(){
+        System.out.println("Nome do Advogado: " + getNome());
+        System.out.println("Número OAB: " + getNumeroOab());
+        System.out.println("Especialidade: " + getEspecialidade());
+        System.out.println("Quantidade de processos: " + getQuantidadeProcessos());
+
     }
 
 }
