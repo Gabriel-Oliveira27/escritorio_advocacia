@@ -17,6 +17,7 @@ public class Processo {
         this.cliente = cliente;
         this.advogadoResponsavel = advogadoResponsavel;
 
+
     }
 
     public int getNumero() {
