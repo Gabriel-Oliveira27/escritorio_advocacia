@@ -68,6 +68,68 @@ public class main {
                 "Horário Comercial (8:00 - 18:00)"
         );
 
+        Cliente cliente = new Cliente(
+                "Fernanda Simplício",
+                "884.442.350-33",
+                "(85) 99942-3321",
+                "Rua Ernesto Gomes, n° 441"
+        );
+
+        Cliente cliente2 = new Cliente(
+                "Thiago Fernandes",
+                "984.311.031-22",
+                "(88) 99411-0042",
+                "Aveniada Philadelphia"
+        );
+
+        Processo processo = new Processo(
+                1,
+                "Requerimento trabalhístico de horas trabalhadas em excesso",
+                "Trabalhista",
+                "Em andamento",
+                cliente,
+                advogado
+        );
+
+        Processo processo2 = new Processo(
+                2,
+                "Reclamação formal de produto com defeito ou vício oculto vendido",
+                "Direito do consumidor",
+                "Concluído",
+                cliente2,
+                advogado2
+        );
+
+        Processo processo3 = new Processo(
+                3,
+                "Solicitação de rescisão direta",
+                "Trabalhista",
+                "Encerrado",
+                cliente2,
+                advogado
+        );
+
+        advogado.exibirDados();
+        advogado.exibirDadosProfissionais();
+
+        advogado2.exibirDados();
+        advogado2.exibirDadosProfissionais();
+
+        estagiario.exibirDados();
+        estagiario.exibirDadosAcademicos();
+
+        estagiario2.exibirDados();
+        estagiario2.exibirDadosAcademicos();
+
+        administrativo.exibirDados();
+        administrativo.exibirDadosSetor();
+
+        processo.exibirProcesso();
+        processo2.exibirProcesso();
+        processo3.exibirProcesso();
+
+
+
 
 
     }
